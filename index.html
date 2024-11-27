@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Realtime Node Socket.io Chat app</title>
+    <!-- <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="./js/client.js"></script> -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="chat.png" alt="">
+    </nav>
+    <div class="container">
+        <div class="message right"> Rahul Hey are you ?</div>
+        <div class="message left"> Ritik fine</div>
+    </div>
+
+    <div class="send">
+        <form method="POST" id="message-form">
+            <input type="text" name="message" id="messageInp">
+            <button class="btn" type="submit"> Send </button>
+        </form>
+    </div>
+
+    <!-- <script defer src="http://localhost:8000/socket.io/socket.io.js"></script> -->
+    <!-- <script src="http://localhost:8000/socket.io/socket.io.js"></script> -->
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+
+    <script src="./js/client.js"></script>
+</body>
+</html>
